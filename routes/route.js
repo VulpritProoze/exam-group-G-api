@@ -19,6 +19,21 @@ router.post('/exams', (req, res) => {
   });
 //   module.exports = router;
 
+router.put('/exams/:id', (req, res) => {
+    const examId = parseInt(req.params.id);
+    const updatedData = req.body;
+  
+    let exam = exams.find(e => e.id === examId);
+    if (exam) {
+      exam.name = updatedData.name || exam.name;
+      exam.date = updatedData.date || exam.date;
+      res.json(exam);
+    } else {
+      res.status(404).json({ error: 'Exam not found' });
+    }
+  });
+  
+
 router.get('/exams', (req, res) =>
   res.json(exams)
 )
