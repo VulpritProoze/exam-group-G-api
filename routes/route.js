@@ -8,7 +8,7 @@ const exams = [
 
 // Default route
 router.get('/exam-group', (req,res) => 
-    res.json({message: "Group F API"})
+    res.json({message: "Group G API"})
 );
 
 router.post('/exams', (req, res) => {
