@@ -2,7 +2,9 @@ import { Router } from 'express';
 
 export const router = Router();
 
-let exams = {};
+const exams = [
+    { id: 1, name: 'Intprog Exam', date: '2025-04-05' }
+  ];
 
 // Default route
 router.get('/exam-group', (req,res) => 
