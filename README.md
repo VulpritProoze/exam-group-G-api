@@ -8,3 +8,9 @@ Endpoints:
 - GET /exams
 - POST /exams/ 
 - PUT /exams/:id
+
+Members:
+- Alin: Main
+- Guinto: POST
+- Licanda: GET
+- Benitez: PUT
