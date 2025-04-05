@@ -18,4 +18,7 @@ router.post('/exams', (req, res) => {
     res.status(201).json(newExam);
   });
 //   module.exports = router;
-  
+
+router.get('/exams', (req, res) =>
+  res.json(exams)
+)
