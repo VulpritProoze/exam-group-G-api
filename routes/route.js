@@ -17,7 +17,6 @@ router.post('/exams', (req, res) => {
     exams.push(newExam);
     res.status(201).json(newExam);
   });
-//   module.exports = router;
 
 router.put('/exams/:id', (req, res) => {
     const examId = parseInt(req.params.id);
